@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cifrado Vigenere</title>
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+    <article>
+            <h1>Cifrado Vigenere.</h1>
+                <br>
+            <input type="text" id="cad" placeholder="Texto a cifrar" onkeypress="return letras(event)">
+            
+            <input type="password" id="clv" placeholder="Clave Seceta"  onkeypress="return letras(event)">
+            <br>
+            <input type="button" value="Cifrar" onclick="encriptarTextoClaro()">
+
+            <input type="button" value="Descifrar" onclick="desencriptarTextoClaro()">
+            <br>
+            <br>
+            <div class="pp" id="resultado" ></div>
+            
+    </article>
+    <br>
+    <aside>
+        <h1>Cifrado Cesar.</h1>
+        <br>
+        <textarea id="cadena" ></textarea>
+        <p> <input type="button" value="Cifrar" onclick="cifrar()" >
+            <input type="button" value="Descifrar" onclick="descifrar()" > </p>
+        <div class="pp" id="resultad" ></div>
+    </aside>
+        
+    
+    <script src="js/logi.js"></script>
+    <script src="js/validacion.js"></script>
+    <script src="js/logica.js"></script>
+
+</body>
+</html>
